@@ -14,6 +14,23 @@ This server exposes a `download_screenshots` tool that:
 - `uv`
 - a Figma personal access token
 
+## Create a Figma token
+
+1. Open Figma.
+2. Go to `Settings`.
+3. Open the `Security` section.
+4. Find `Personal access tokens`.
+5. Create a new token.
+6. Select the `file_content:read` scope.
+7. Copy the token.
+
+For this project, use a personal access token.
+
+Important:
+- select `file_content:read`
+- this is the only scope required for this MCP
+- this MCP only reads image export data from Figma and does not modify files
+
 Set your token with:
 
 ```bash
